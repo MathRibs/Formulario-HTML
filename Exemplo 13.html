@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 13 - Formulários </title>
+</head>
+<body>
+    <h1>Exemplo 13 Formulários</h1>
+    <h2>Elementos de Formulários - fieldset, input : text , date  Color, e-mail, checkbox, radio e number</h2>
+    <form action="pgMinhaPagina.aspx" method="POST">
+       <fieldset>
+           <legend>Dados Pessoais </legend>
+        <div>
+            <label for="">Nome</label><br>
+            <input type="text" nome = "txtnNome" id = txtNome>
+        </div>
+        <br>
+        <div>
+            <label for="">Ano Nascimento</label> <br>
+            <input type="number" nome = "txtAnoNascimento" id = "txtAnoNascimento">
+        </div>
+        <br>
+        <div>
+            <label for="">E-mail</label><br>
+            <input type="email" nome = "txtemail" id = "txtemail"  >
+        </div>
+        <br>
+        <div>
+            <label for="">Senha</label><br>
+            <input type="password" nome = "txtSenha" id = "txtSenha">
+        </div>
+
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias </legend>
+    <div>
+        <label for="">Sua cor preferida</label>
+        <input type="color" nome = "txtColor" id = "txtColor" >
+        </div>
+        <br>
+        <div>
+            <label for="">Seu Local Favorito</label><br>
+       <input type="checkbox" nome = "chkPreferencia" id = "chkPreferencia"value = "1" >Praia
+       <input type="checkbox" nome = "chkPreferencia" id = "chkPreferencia"value = "2" >Cachoeira
+       <input type="checkbox" nome = "chkPreferencia" id = "chkPreferencia"value = "3" >Montanha 
+       <input type="checkbox" nome = "chkPreferencia" id = "chkPreferencia"value = "4" >Clube
+       <input type="checkbox" nome = "chkPreferencia" id = "chkPreferencia"value = "5" >Campo
+    </div>
+    </form>
+</fieldset>
+<button type="submit">Cadastrar</button> 
+</body>
+</html>
